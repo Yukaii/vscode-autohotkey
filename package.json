@@ -1,0 +1,26 @@
+{
+    "name": "ahk",
+    "displayName": "AutoHotKey Language Support",
+    "description": "AutoHotKey Language Support",
+    "version": "0.0.1",
+    "publisher": "Yukai",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ahk",
+            "aliases": ["AutoHotkey", "ahk"],
+            "extensions": [".ahk"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ahk",
+            "scopeName": "source.ahk",
+            "path": "./syntaxes/ahk.tmLanguage"
+        }]
+    }
+}
